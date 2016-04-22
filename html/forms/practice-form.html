@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Practice Form</title>
 </head>
 <body>
+	<form action="success.html">
+		  <fieldset>
+    		<div>
+      			<label>First name:</label>
+      			<input type="text" name="firstname">
+    		</div>
 
+    		<div>
+      			<label>Telephone Number</label>
+      			<input type="tel" name="phone">
+    		</div>
+    		<div>
+      			<label>Date:</label>
+      			<input type="date" name="date">
+    		</div>
+    		</fieldset>
+    	  <fieldset>
+    		<div>
+    			<label>Which mode of transportation would you prefer?</label>
+    			<select name="transport">
+    				<option value="road"> Car </option>
+    				<option value="road"> Bus </option>
+    		    	<option value="road"> Bike </option>
+    		    </select>
+    		</div>
+  		 </fieldset>
+  		 <fieldset>
+    		<div>
+    			<label>Leave us a comment!</label>
+    			<textarea name="textarea" rows="5" cols="20">Type your comment here</textarea>
+    		</div>
+    	</fieldset>
+    	<button type="submit">Submit here!</button>
+	</form>
 </body>
 </html>
