@@ -1,16 +1,18 @@
 #octopus {
 	margin-left: 30%;
 	margin-top: 10%;
-	position: absolute;
+	position: relative;
 	z-index: -1;
 }
 #hat{
 	position: absolute;
-	margin-left: 27%;
+	top: 59px;
+	left:369px;
 	z-index: 1;
 }
 #glasses{
 	position:absolute;
-	margin-top: 26%;
-	margin-left: 37%;
+	top: 39%;
+	left: 34%;
+
 }
