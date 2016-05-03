@@ -1,3 +1,4 @@
+
 puts "What is the hamster's name?"
 name = gets.chomp
 
@@ -12,3 +13,8 @@ adoption = gets.chomp
 
 puts "What is the estimated age of the hamster?"
 age = gets.chomp
+
+if age.empty?
+	puts "age unknown"
+end
+
