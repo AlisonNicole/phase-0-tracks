@@ -8,3 +8,39 @@ Ask "what floor shall we go to?"
 Take number provided and locate said number on the control panel
 Press located number until doors close
 Enjoy the ride!
+
+----------------------------------------------
+
+Release 1: Real life example
+
+Getting into the car and driving away
+
+1. unlock car doors by pressing "unlock" button on keychain
+2. approach driver's side door
+3. lift handle on door and pull outwards until door is completely open
+4. sit in driver's seat
+5. locate seatbelt on driver's side door
+6. pull strap across the body and insert buckle into the latch
+7. locate key on keychain
+8. insert key on keychain into ignition of car
+9. locate brake pedal
+10. use right foot to press brake pedal and maintain pressure
+11.while maintaining pressure, turn key on keychain three notches until car is running
+12. locate shifter
+13. pull shifter back 1 degree to "R"
+14. lift foot off of brake pedal
+15. locate gas pedal with right foot
+16. locate rearview mirror
+17. check rearview mirror ensuring nothing is blocking path
+18. push gas pedal slowly until car begins to move backwards
+19. continue same pressure until car is completely out of driveway and in the street
+20. locate brake pedal
+21. remove foot from gas pedal and depress brake pedal to stop
+22. locate shifter
+23. pull shifter back 2 degrees to "D"
+remove foot from brake pedal and depress gas pedal until car is moving forwards
+
+
+
+
+
