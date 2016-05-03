@@ -1,0 +1,10 @@
+To use an elevator:
+
+Step into elevator
+Turn towards control panel
+Wait for doors to close
+Ask "what floor shall we go to?"
+	Wait for response
+Take number provided and locate said number on the control panel
+Press located number until doors close
+Enjoy the ride!
