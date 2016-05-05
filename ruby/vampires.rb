@@ -17,25 +17,20 @@ health_insurance = gets.chomp
 wrong_age = age.to_i <= 100 && date_of_birth.to_i < 1916
 right_age = age.to_i <100 && date_of_birth.to_i > 1916
 
-	
+
 case 
 	when right_age && (garlic_bread == "Y" || health_insurance == "Y")
 		puts "Probably not a vampire."
-	when wrong_age && (garlic_bread == "N" || health_insurance == "N")
+	when wrong_age && ((garlic_bread == "Y" && health_insurance == "N") || (garlic_bread == "N" && health_insurance == "Y"))
 		puts "Probably a vampire."
+	when wrong_age && (garlic_bread == "N" && health_insurance == "N")
+		puts "Almost certainly a vampire."
+	when name == "Drake Cula" || "Tu Fang"
+		puts "Definitely a vampire."
 	else
 		puts "Results inconclusive."
 end
 
-# This code was working
-#case 
-#	when age.to_i <= 100 && (garlic_bread == "Y" || health_insurance == "Y")
-#		puts "Probably not a vampire."
-#	when age.to_i >= 100 && (garlic_bread == "N" || health_insurance == "N")
-#		puts "Probably a vampire."
-#	else
-#		puts "Results inconclusive."
-#end
 
 
 
