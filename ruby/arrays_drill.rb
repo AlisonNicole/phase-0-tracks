@@ -1,3 +1,13 @@
+def inventory(arr) 
+	return arr
+end
+
+def shopping(arr, item)
+	return arr << item
+end
+
+
+
 store = []
 
 store << "candy" << "gum" << "chips" << "soda" << "ice"
@@ -13,4 +23,6 @@ store.include?("gum")
 
 rival_store = ["cigarettes", "beer", "wine"]
 
-p rival_store + store
+# p rival_store + store
+# p inventory(["candy", "gum", "chips"])
+p shopping(["candy", "gum", "chips"], "wine")
