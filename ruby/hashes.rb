@@ -1,4 +1,4 @@
-#prompt user for information and get data into symbol key
+#prompt user for information and that will be put into symbols
 
 puts "Please Enter the Following"
 
@@ -20,6 +20,7 @@ favorite_color = gets.chomp
 puts "Do you like stripes?"
 stripes = gets.chomp
 
+#add user data to hash
 customer_information = {
 	:name => name,
 	:age => age,
@@ -30,5 +31,24 @@ customer_information = {
 
 }
 
+#print hash back to screen
 puts customer_information
 
+#last chance to edit data
+puts "Is there anything you would like to edit? Enter 'done' to complete"
+user_response = gets.chomp.downcase
+
+if user_response == 
+
+else user_response == "done"
+
+end
+
+if edit_response == "client name"
+	customer_information = {
+		:name => edit_response
+	}
+else edit_response == "done"
+end
+
+puts customer_information
