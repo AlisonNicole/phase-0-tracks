@@ -23,7 +23,7 @@ stripes = gets.chomp
 #add user data to hash
 customer_information = {
 	:name => name,
-	:age => age,
+	:cutomer_age => age,
 	:children => children,
 	:theme => theme,
 	:favorite_color => favorite_color,
@@ -39,30 +39,36 @@ puts customer_information
 puts "Is there anything you would like to edit? Enter 'done' to complete"
 user_response = gets.chomp.downcase
 
-edited_response = " "
+user_edit = ""
 
+case 
+	when user_response == "client name" 
+		puts "what would you like to change it to?"
+		user_edit = gets.chomp.downcase
+		customer_information.store(:name, user_edit)
 
-if user_response == "y"
-	puts "Which category would you like to change?"
-	edited_response == gets.chomp.downcase
+	 when user_response == "client age"
+	  	puts "what would you like to change it to?"
+	  	user_edit = gets.chomp.downcase
+	  	customer_information.store(:age, user_edit)
+	when user_response == "number of children"
+	 	puts "what would you like to change it to?"
+	 	user_edit = gets.chomp.downcase
+	 	customer_information.store(:children, user_edit)
+	when user_response == "decor theme"
+	 	puts "what would you like to change it to?"
+	 	user_edit = gets.chomp.downcase
+	 	customer_information.store(:theme, user_edit)
+	when user_response == "favorite color"
+	 	puts "what would you like to change it to?"
+	 	user_edit = gets.chomp.downcase
+	 	customer_information.store(:favorite_color, user_edit)
+	when user_response == "like stripes"
+	 	puts "what would you like to change it to?"
+	 	user_edit = gets.chomp.downcase
+	 	customer_information.store(:stripes, user_edit)
 else user_response == "done"
 
-end
-
- #if user elects to edit, assign new value to symbol
-if edited_response == "client name"
-	puts "what would you like to change it to?"
-	edit = gets.chomp.downcase
-	customer_information = {
-		:name => edit
-	}
-elsif edited_response == "client age"
-	puts "what would you like to change it to?"
-	edit = gets.chomp.downcase
-	customer_information = {
-		:age => edit
-	}
-else 
 end
 
 puts customer_information
