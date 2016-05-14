@@ -26,8 +26,8 @@
 # => "The case of the disappearing last lette"
 
 
-s ="The mystery of the missing first letter".slice!(0)
-puts s
+#puts "The mystery of the missing first letter".reverse.chop!.reverse
+
 # => "he mystery of the missing first letter"
 
 #puts "Elementary,    my   dear        Watson!".partition("1")
