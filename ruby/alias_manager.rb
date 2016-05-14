@@ -8,7 +8,11 @@ puts "Please enter your real name."
 real_name = gets.chomp.downcase
 
 #swap first and last name
-split_name = []
-split_name << real_name.reverse!
+
+#create the array
+#split_name << real_name
+split_name = real_name.split
+#reverse the order of the array
+split_name.reverse
 
 #----------anything above this is working------------------------
