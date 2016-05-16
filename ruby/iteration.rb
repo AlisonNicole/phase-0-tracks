@@ -1,3 +1,12 @@
+def block_test
+	puts "We shall see if this works"
+	yield("red","white","blue")
+end
+
+block_test { |value1, value2, value3| puts "This should print the words #{value1}, #{value2}, #{value3}!"}
+
+
+
 arr = [1,2,3,4,5,6,7,8,7,7,7,7]
 hash = Hash.new(0)
     hash["tom"] = ["Kind", "Smart","sadfds","asdfasd"]
@@ -27,5 +36,4 @@ hash.select{|key,value| value.length < 3}
 arr = (1..50).to_a
 arr.drop_while{|item| item < 20}
 puts arr
-hash.keep_if{|key,value| value.include? "Kind"}
-puts hash
+hash.keep_if {|key,value| value.include? "Kind"}
