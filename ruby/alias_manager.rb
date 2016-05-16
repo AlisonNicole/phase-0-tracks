@@ -54,4 +54,5 @@ first_name = gets.chomp.downcase
 puts "your new name is #{encrypt(last_name)} #{encrypt(first_name)}"
   end
 
+#I could not get to the point that I could add the fake names to a data structure. 
 
