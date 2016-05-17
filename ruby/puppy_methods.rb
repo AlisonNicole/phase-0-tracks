@@ -6,7 +6,19 @@ class Puppy
   end
 
   def speak(n)
-  	puts "Woof!"
+  	puts "Woof!" * n
+  end
+
+  def roll_over
+  	puts "Roll Over"
+  end
+
+  def dog_years(human_years)
+  	puts "Your puppy is #{human_years * 7} years!"
+  end
+
+  def sit
+  	puts "Puppy is sitting!"
   end
 end
 
@@ -17,4 +29,10 @@ della = Puppy.new
 
 #della.fetch("ball")
 
-della.speak(4)
+#della.speak(4)
+
+#della.roll_over
+
+#della.dog_years(3)
+
+#della.sit
