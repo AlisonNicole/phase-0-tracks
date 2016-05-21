@@ -25,21 +25,16 @@ class Otter
 		puts "Your otter just ate a #{type}"
 	end
 
+	def print_otters
+		puts "Your otters names are: #{@name}"
+		puts "Your otters are #{@age}"
+		puts "Your otters are #{@color}"
+	end
 end
 
 
 #------------USER INTERFACE--------------------
-#to create an instance 
-# otter = Otter.new
-# p otter
 
-
-# 10.times do
-#   santa = Santa.new(example_genders.sample, example_ethnicities.sample)
-#   santa.age = rand(0..140)
-#   santas << santa
-# end
-#----------create as many instances of otter as the user input
 
 list_of_otters= []
 
@@ -57,7 +52,8 @@ number_of_otters.times do
 	otter.age= age
 	otter.color= color
 	list_of_otters << otter
+	otter.print_otters
 end
 
-p list_of_otters
+
 
