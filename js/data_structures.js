@@ -14,8 +14,6 @@
 // console.log(new_horse);
 
 
-
-
 function Car(color, topSpeed, capacity) {
   //console.log("Our new car:", this);
   
@@ -37,7 +35,7 @@ console.log(new_car);
 var new_car = new Car("yellow", 85, 6);
 console.log(new_car);
 
-
+// potential way to loop through a hash
 // var hash = {}
 // hash[key] = value
 
