@@ -126,3 +126,29 @@ alabama.virus_effects
 
 #=======================================================================
 # Reflection Section
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# One has the key set as a string whereas the other has the key set as a symbol.       
+
+
+# What does require_relative do? How is it different from require?
+# Require relative links to the file provided, whereas require loads the additional Ruby code from the path on your computer.
+
+
+# What are some ways to iterate through a hash?
+# You can iterate through a hash by providing the key and value then use methods such as .each or .sort to work through the items.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+#The fact that virus_effects did not need to take any parameters because all of the variables were instance variables and were used elsewhere in the methods being called. 
+
+# What concept did you most solidify in this challenge?
+#This challenge really solidified the use of instance variables and the way to use them throughout the class. 
+
+
+
+
+
+
+
+
+
+
