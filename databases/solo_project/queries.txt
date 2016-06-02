@@ -1,0 +1,58 @@
+
+Display the information in one table (either table is fine).
+	sqlite> SELECT * FROM dogbreeds;
+	1|Affenpinscher|5|1|6
+	2|Afghan Hound|9|5|2
+	3|Airedale Terrier|2|0|5
+	4|Akita|9|5|7
+	5|Alaskan Malamute|9|0|7
+
+Update an item that meets some condition (you can choose a condition that makes sense).
+	sqlite> UPDATE dogbreeds SET colors=2 WHERE 	name="Affenpinscher";
+	sqlite> SELECT * FROM dogbreeds;
+	1|Affenpinscher|2|1|6
+	2|Afghan Hound|9|5|2
+	3|Airedale Terrier|2|0|5
+	4|Akita|9|5|7
+	5|Alaskan Malamute|9|0|7
+
+Display the information in both tables using one query.
+	sqlite> SELECT * FROM dogbreeds, groups WHERE 	dogbreeds.breed_id = groups.id;
+	1|Affenpinscher|5|1|6|6|Toy
+	2|Afghan Hound|9|5|2|2|Hound
+	3|Airedale Terrier|2|0|5|5|Terrier
+	4|Akita|9|5|7|7|Working
+	5|Alaskan Malamute|9|0|7|7|Working
+
+Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+	sqlite> SELECT dogbreeds.name, groups.name FROM dogbreeds JOIN groups ON dogbreeds.breed_id = groups.id; 
+	Affenpinscher|Toy
+	Afghan Hound|Hound
+	Airedale Terrier|Terrier
+	Akita|Working
+	Alaskan Malamute|Working
+
+
+Delete an item that meets some condition (you can choose a condition that makes sense).
+	sqlite> DELETE FROM dogbreeds WHERE name="Affenpinscher";
+	sqlite> SELECT * FROM dogbreeds;
+	2|Afghan Hound|9|5|2
+	3|Airedale Terrier|2|0|5
+	4|Akita|9|5|7
+	5|Alaskan Malamute|9|0|7	
+
+
+Try a few different joins in your database, and record the commands and the output in queries.txt.
+	sqlite> SELECT dogbreeds.name, groups.id FROM dogbreeds inner join groups ON groups.id = 2;
+	Afghan Hound|2
+	Airedale Terrier|2
+	Akita|2
+	Alaskan Malamute|2
+
+I received an error message saying that RIGHT and FULL OUTER JOINs are not currently supported.
+
+	sqlite> SELECT dogbreeds.name, groups.id, dogbreeds.colors, dogbreeds.markings FROM dogbreeds left join groups ON groups.id = 1;
+	Afghan Hound|1|9|5
+	Airedale Terrier|1|2|0
+	Akita|1|9|5
+	Alaskan Malamute|1|9|0
