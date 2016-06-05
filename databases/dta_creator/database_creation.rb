@@ -9,7 +9,7 @@ require 'sqlite3'
 # create SQLite3 database
 db = SQLite3::Database.new("dogbreeds.db")
 
-
+#creates dog table
 create_table_cmd = <<-SQL
   CREATE TABLE IF NOT EXISTS dogs(
     id INTEGER PRIMARY KEY,
@@ -21,4 +21,14 @@ create_table_cmd = <<-SQL
   )
 SQL
 
-db.execute(create_table_cmd)
+# db.execute(create_table_cmd)
+
+#creates groups table
+create_table_group = <<-SQL
+  CREATE TABLE IF NOT EXISTS groups(
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255)
+  )
+SQL
+
+db.execute(create_table_group)
