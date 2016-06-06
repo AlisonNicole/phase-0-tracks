@@ -59,11 +59,14 @@ end
 # add_dog(db, "Akita", 9, 5, 7)
 # add_dog(db, "Alaskan Malamute", 9, 0, 7)
 
+
+#insert the breed collected from the user to return traits in sentence/paragraph.
 def get_info (db, breed)
-	dog_info = db.execute("SELECT * FROM dogs WHERE 	breedname='" + breed + "'")
+	dog_info = db.execute("SELECT * FROM dogs JOIN groups ON dogs.group_id = groups.id WHERE breedname='" + breed + "'")
 
 	dog_info.each do |dog|
 	puts "The #{dog['breedname']} has #{dog['colors']} colors and #{dog['markings']} markings."
+	puts "The #{dog['breedname']} is a member of the #{dog['name']} group."
 	end
 
 end
@@ -77,16 +80,18 @@ list_dogs.each do |dog|
 puts "#{dog['breedname']} is in the #{dog['name']} group."
 end 
 
+#response will provide a breed name
 puts "What breed would you like more information on?"
 response = gets.chomp.split.each{|i| i.capitalize!}.join(' ')
-p response
 
+
+#use the breed name from the owner to return the traits of that breed.
 get_info(db, response)
 
-#response will provide a breed name
-#use that name to collect the name, colors, and markings of that breed
 
-#insert the info from the table into the paragraph about the breed.
+
+
+
 
 
 
