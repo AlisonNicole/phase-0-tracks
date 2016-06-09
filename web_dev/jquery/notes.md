@@ -10,3 +10,5 @@ Focus on finding at least 2 different resources that are well organized and easy
 
 
 ###4. If possible, find and practice with at least 2 different practice assignments before starting my project.
+
+#### After executing my plan I found that I stuck to it in pretty general terms. By starting out my research looking for when to use jQuery and the syntax I was able to form an idea of what I wanted to do with the project. From there, I utilized a couple of different tutorials that I found to be the most helpful because it allowed me to see functioning jQuery and emulate my code after that. 
